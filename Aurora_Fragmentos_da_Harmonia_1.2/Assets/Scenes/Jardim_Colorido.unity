@@ -1408,6 +1408,10 @@ MonoBehaviour:
     o mundo se torne mais completo"
   nomecena: "Esta\xE7\xE3o_de_Trem"
   Cristal_Grande: {fileID: 1122295165}
+  Cristais_Pequenos:
+  - {fileID: 525138683}
+  - {fileID: 465879306}
+  - {fileID: 2027270046}
   Cenario_Descolorido: {fileID: 1852660797}
   Cenario_Colorido: {fileID: 347011997}
 --- !u!114 &618794298
@@ -2103,8 +2107,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.3
-  m_fontSizeBase: 45.3
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2139,7 +2143,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -14.335609, y: 0, z: 19.362549, w: 62.86718}
+  m_margin: {x: -14.335609, y: 0, z: 48.951477, w: 68.53103}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

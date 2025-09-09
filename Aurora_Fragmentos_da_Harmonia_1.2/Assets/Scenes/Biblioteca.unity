@@ -595,8 +595,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.3
-  m_fontSizeBase: 45.3
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -14.335609, y: 0, z: 97.82202, w: -9.557083}
+  m_margin: {x: -14.335609, y: 0, z: 97.82202, w: 7.8155975}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1192,6 +1192,10 @@ MonoBehaviour:
     esquecido."
   nomecena: Jardim_Colorido
   Cristal_Grande: {fileID: 1671556155}
+  Cristais_Pequenos:
+  - {fileID: 64457196}
+  - {fileID: 2023297382}
+  - {fileID: 407178743}
   Cenario_Descolorido: {fileID: 1491368507}
   Cenario_Colorido: {fileID: 1450026721}
 --- !u!224 &704517083

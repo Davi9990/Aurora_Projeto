@@ -464,8 +464,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.3
-  m_fontSizeBase: 45.3
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -14.335609, y: 24.141441, z: 127.99921, w: -9.557083}
+  m_margin: {x: -14.335609, y: 24.141441, z: 127.99921, w: 13.6064415}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3146,6 +3146,10 @@ MonoBehaviour:
     prova de que a vida \xE9 mais bela quando se vive com verdade."
   nomecena: Tela_Final
   Cristal_Grande: {fileID: 1594804778}
+  Cristais_Pequenos:
+  - {fileID: 1549065047}
+  - {fileID: 1700795170}
+  - {fileID: 1629926629}
   Cenario_Descolorido: {fileID: 398842112}
   Cenario_Colorido: {fileID: 1426729242}
 --- !u!114 &1776149091

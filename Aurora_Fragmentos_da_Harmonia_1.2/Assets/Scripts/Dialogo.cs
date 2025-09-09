@@ -35,9 +35,14 @@ public class Dialogo : MonoBehaviour
 
     private bool dialogoAberto = false;
     private bool dialogoInicialAtivo = false;
+
+    [Header("Objetos do cenário")]
     public GameObject Cristal_Grande;
+    public GameObject[] Cristais_Pequenos;
     public GameObject Cenario_Descolorido;
     public GameObject Cenario_Colorido;
+
+    private int cristalAtual = 0;
 
     void Start()
     {
@@ -54,8 +59,43 @@ public class Dialogo : MonoBehaviour
 
         Cenario_Colorido.SetActive(false);
 
+        DesativarCristais();
+
         IniciarDialogosExtra(falasIniciais);
     }
+
+    private void DesativarCristais()
+    {
+        foreach(var cristal in Cristais_Pequenos)
+        {
+            if(cristal != null)
+            {
+                cristal.SetActive(false);
+            }
+        }
+
+        if (Cristal_Grande != null)
+        {
+            Cristal_Grande.SetActive(false);
+        }
+    }
+
+    private void AtivarCristais(int indexCristal)
+    {
+        foreach(var cristal in Cristais_Pequenos)
+        {
+            if(cristal != null)
+            {
+                cristal.SetActive(true);
+            }
+        }
+
+        if(indexCristal == 3 && Cristal_Grande != null)
+        {
+            Cristal_Grande.SetActive(true);
+        }
+    }
+
 
     //Diálogos Iniciais
     public void IniciarDialogosExtra(string[] falas)
@@ -69,34 +109,36 @@ public class Dialogo : MonoBehaviour
         falasAtuais = falas;
         indexFala = 0;
 
+        DesativarCristais();
+
         MostrarFalaAtual();
     }
 
     public void ProximaDialogo()
     {
-        //Se chegou nofinal do último diálogo, troca de cana no próximo clicar
-        if (trocarCenaNoProximoClique)
-        {
-            SceneManager.LoadScene(nomecena);
-            return;
-        }
-
         if (!dialogoInicialAtivo)
         {
             FecharDialogo();
             return;
         }
-        
+
         indexFala++;
 
-        if(falasAtuais != null && indexFala < falasAtuais.Length)
+        if (falasAtuais != null && indexFala < falasAtuais.Length)
         {
             MostrarFalaAtual();
         }
         else
         {
+            // Chegou ao final do diálogo atual
             dialogoInicialAtivo = false;
             FecharDialogo();
+
+            // Trocar de cena somente se for o diálogo 4
+            if (falasAtuais == falasCristal4)
+            {
+                SceneManager.LoadScene(nomecena);
+            }
         }
     }
 
@@ -119,10 +161,13 @@ public class Dialogo : MonoBehaviour
             return;
 
         dialogoAberto = true;
+        cristalAtual = indexCristal;
 
         // Desativa todas as imagens
         for (int i = 0; i < KidsDialogos.Length; i++)
             KidsDialogos[i].enabled = false;
+
+        DesativarCristais();
 
         // Aqui você escolhe qual imagem mostrar dependendo do diálogo
         if (indexCristal == 1)
@@ -145,6 +190,7 @@ public class Dialogo : MonoBehaviour
         else if (indexCristal == 4)
         {
             KidsDialogos[1].enabled = true;
+
             Cenario_Colorido.SetActive(true);
             Cenario_Descolorido.SetActive(false);
             IniciarDialogosExtra(falasCristal4);
@@ -164,5 +210,7 @@ public class Dialogo : MonoBehaviour
             KidsDialogos[i].enabled = false;
 
         dialogoAberto = false;
+
+        AtivarCristais(cristalAtual);
     }
 }

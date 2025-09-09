@@ -1459,6 +1459,10 @@ MonoBehaviour:
     sem medo. Ningu\xE9m deve ser exclu\xEDdo da vida."
   nomecena: Biblioteca
   Cristal_Grande: {fileID: 1480249369}
+  Cristais_Pequenos:
+  - {fileID: 1351580106}
+  - {fileID: 1701211055}
+  - {fileID: 890056075}
   Cenario_Descolorido: {fileID: 1208572177}
   Cenario_Colorido: {fileID: 649103048}
 --- !u!114 &1296238225
@@ -2596,8 +2600,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.3
-  m_fontSizeBase: 45.3
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2632,7 +2636,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -14.335609, y: 0, z: 176.28217, w: 26.654991}
+  m_margin: {x: -14.335609, y: 0, z: 153.11877, w: 38.236732}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
