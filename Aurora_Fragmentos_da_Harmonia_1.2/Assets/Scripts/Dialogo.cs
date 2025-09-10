@@ -35,6 +35,7 @@ public class Dialogo : MonoBehaviour
     private int indexFala = 0;
     private string[] falasAtuais;
     private int cristalAtual = 0;
+    private bool trocarCena = false;
 
     void Start()
     {
@@ -69,13 +70,14 @@ public class Dialogo : MonoBehaviour
             cristalGrande.SetActive(true);
     }
 
-    public void IniciarDialogo(string[] falas)
+    public void IniciarDialogo(string[] falas, bool cenaNoFinal = false)
     {
         if (falas == null || falas.Length == 0) return;
 
         caixaDialogo.SetActive(true);
         falasAtuais = falas;
         indexFala = 0;
+        trocarCena = cenaNoFinal;
         DesativarCristais();
         MostrarFalaAtual();
     }
@@ -92,8 +94,8 @@ public class Dialogo : MonoBehaviour
         {
             FecharDialogo();
 
-            // Troca de cena automaticamente
-            if (!string.IsNullOrEmpty(nomeCena))
+            // Só troca de cena se for diálogo 4
+            if (trocarCena && !string.IsNullOrEmpty(nomeCena))
                 SceneManager.LoadScene(nomeCena);
         }
     }
@@ -127,14 +129,14 @@ public class Dialogo : MonoBehaviour
             case 3:
                 kidsDialogos[1].enabled = true;
                 kidsDialogos[0].enabled = false;
-                cristalGrande.SetActive(true);
+                //cristalGrande.SetActive(true);
                 IniciarDialogo(falasCristal3);
                 break;
             case 4:
                 kidsDialogos[1].enabled = true;
                 cenarioColorido.SetActive(true);
                 cenarioDescolorido.SetActive(false);
-                IniciarDialogo(falasCristal4);
+                IniciarDialogo(falasCristal4, true);
                 break;
         }
     }

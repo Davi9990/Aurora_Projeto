@@ -269,7 +269,7 @@ MonoBehaviour:
     voz a todos. Nada sobre n\xF3s deve ser feito sem n\xF3s."
   - "Agora, Lumina ter\xE1 todas as suas cores de volta. E as Sombras do Esquecimento
     n\xE3o ter\xE3o mais poder. Porque a diversidade \xE9 a nossa maior for\xE7a."
-  nomeCena: Menu_Inicial
+  nomeCena: "Pra\xE7a"
 --- !u!1 &958002015
 GameObject:
   m_ObjectHideFlags: 0

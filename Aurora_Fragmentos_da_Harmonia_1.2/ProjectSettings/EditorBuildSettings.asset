@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Locais/Pra\xE7a.unity"
     guid: 61dac079c171abe439e510a459ab800d
   - enabled: 1
+    path: Assets/Scenes/Locais/Escadaria.unity
+    guid: b93515286c43b0245ac7fedca48f366d
+  - enabled: 1
     path: Assets/Scenes/Locais/Jardim_Colorido.unity
     guid: c7324d7745bfb0d4cac18df8060d2425
   - enabled: 1

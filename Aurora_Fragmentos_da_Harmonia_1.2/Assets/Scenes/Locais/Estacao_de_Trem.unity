@@ -879,9 +879,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15ab3aca016ae44b902e3525ccce238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caixaDialogo: {fileID: 0}
-  kidsDialogos: []
-  textoUI: {fileID: 0}
+  caixaDialogo: {fileID: 685079863}
+  kidsDialogos:
+  - {fileID: 1277703930}
+  - {fileID: 1263502636}
+  textoUI: {fileID: 1606469472}
   inventario: {fileID: 255747705}
   textosDialogos:
   - "\xC0s vezes,quando eu falo, ningu\xE9m me escuta. Parece que minhas palavras
@@ -924,11 +926,14 @@ MonoBehaviour:
     ecoa em mim agora, e eu prometo que vou us\xE1-la para mostrar a todos que cada
     palavra, por mais baixinha que seja, tem um lugar no mundo. Suas palavras importam,
     Elisa. E eu sinto que a minha voz tamb\xE9m se fortaleceu com a sua."
-  nomeCena: 
-  cristalGrande: {fileID: 0}
-  cristaisPequenos: []
-  cenarioDescolorido: {fileID: 0}
-  cenarioColorido: {fileID: 0}
+  nomeCena: Escadaria
+  cristalGrande: {fileID: 1457025894}
+  cristaisPequenos:
+  - {fileID: 666092239}
+  - {fileID: 1176727214}
+  - {fileID: 1116642930}
+  cenarioDescolorido: {fileID: 868342299}
+  cenarioColorido: {fileID: 1546501110}
 --- !u!1 &868342299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1770,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 685079867}
         m_TargetAssemblyTypeName: Dialogo, Assembly-CSharp
-        m_MethodName: ProximaDialogo
+        m_MethodName: ProximoDialogo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1826,7 +1831,6 @@ GameObject:
   - component: {fileID: 1413153452}
   - component: {fileID: 1413153451}
   - component: {fileID: 1413153450}
-  - component: {fileID: 1413153449}
   m_Layer: 5
   m_Name: Canvas_Cristal_Grande
   m_TagString: Untagged
@@ -1834,19 +1838,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1413153449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413153448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe00c278525eb447ae0727d6ccd4f35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
 --- !u!114 &1413153450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1854,7 +1845,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413153448}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a5c4f3124e783e44bb1ee8bc40ed0ff, type: 3}
   m_Name: 
