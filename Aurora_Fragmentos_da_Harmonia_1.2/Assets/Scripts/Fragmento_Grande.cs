@@ -30,14 +30,21 @@ public class Fragmento_Grande : MonoBehaviour
     {
         if (gameObject.CompareTag("Cristal"))
         {
+            // Incrementa o índice do cristal no inventário
             inventario.Index_Cristais += 1;
-            dialogo.AbrirDialogoDireto(inventario.Index_Cristais);
 
-            //Incrementa o placar global (s� o cristal final faz isso!)
-            GameManeger.Instance.AddScore(1);
+            // Chama o novo método do Dialogo
+            if (dialogo != null)
+                dialogo.AbrirDialogoCristal(inventario.Index_Cristais);
+            else
+                Debug.LogWarning("Dialogo não está atribuído no Inspector!");
+
+            // Incrementa o placar global (só o cristal final faz isso!)
+            if (GameManeger.Instance != null)
+                GameManeger.Instance.AddScore(1);
 
             Destroy(gameObject);
-            Debug.Log("Cristal destruido e pontua��o adicionada!");
+            Debug.Log("Cristal destruído e pontuação adicionada!");
         }
     }
 }

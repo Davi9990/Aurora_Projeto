@@ -28,10 +28,17 @@ public class Objeto_Identificado : MonoBehaviour
     {
         if (gameObject.CompareTag("Cristal"))
         {
+            // Incrementa o índice do cristal no inventário
             inventario.Index_Cristais += 1;
-            dialogo.AbrirDialogoDireto(inventario.Index_Cristais);
+
+            // Chama o método atualizado do Dialogo
+            if (dialogo != null)
+                dialogo.AbrirDialogoCristal(inventario.Index_Cristais);
+            else
+                Debug.LogWarning("Dialogo não está atribuído no Inspector!");
+
             Destroy(gameObject);
-            Debug.Log("Cristal destruido!");
+            Debug.Log("Cristal destruído!");
         }
     }
 }

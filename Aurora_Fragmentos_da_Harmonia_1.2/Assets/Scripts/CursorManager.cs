@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CursorManager : MonoBehaviour
@@ -8,28 +6,32 @@ public class CursorManager : MonoBehaviour
     public Texture2D cursorNormal;
     public Texture2D cursorClick;
 
-    [Header("Configuração")]
-    public Vector2 hotspot = Vector2.zero; // Define o ponto "ativo" do cursor
-    public CursorMode cursorMode = CursorMode.Auto;
+    [Header("ConfiguraÃ§Ã£o")]
+    public CursorMode cursorMode = CursorMode.ForceSoftware; // forÃ§a tamanho real
+    private Vector2 hotspotNormal;
+    private Vector2 hotspotClick;
 
     private void Start()
     {
-        // Faz o objeto não ser destruído ao trocar de cena
         DontDestroyOnLoad(gameObject);
 
-        // Começa com o cursor normal
+        // Define o hotspot no centro das texturas
+        if (cursorNormal != null)
+            hotspotNormal = new Vector2(cursorNormal.width / 2, cursorNormal.height / 2);
+
+        if (cursorClick != null)
+            hotspotClick = new Vector2(cursorClick.width / 2, cursorClick.height / 2);
+
         SetCursorNormal();
     }
 
     private void Update()
     {
-        // Troca pro cursor de clique quando o botão esquerdo for pressionado
         if (Input.GetMouseButtonDown(0))
         {
             SetCursorClick();
         }
 
-        // Volta pro cursor normal quando soltar o botão
         if (Input.GetMouseButtonUp(0))
         {
             SetCursorNormal();
@@ -39,18 +41,12 @@ public class CursorManager : MonoBehaviour
     public void SetCursorNormal()
     {
         if (cursorNormal != null)
-        {
-            Cursor.SetCursor(cursorNormal, hotspot, cursorMode);
-            //Debug.Log("Cursor Normal ativado");
-        }
+            Cursor.SetCursor(cursorNormal, hotspotNormal, cursorMode);
     }
 
     public void SetCursorClick()
     {
         if (cursorClick != null)
-        {
-            Cursor.SetCursor(cursorClick, hotspot, cursorMode);
-            //Debug.Log("Cursor Click ativado");
-        }
+            Cursor.SetCursor(cursorClick, hotspotClick, cursorMode);
     }
 }

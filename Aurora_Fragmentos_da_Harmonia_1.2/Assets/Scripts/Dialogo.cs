@@ -1,127 +1,87 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Dialogo : MonoBehaviour
 {
-    [Header("Componentes do di·logo")]
-    public GameObject Caixa_de_dialogo;
-    public Image[] KidsDialogos;
-    public TextMeshProUGUI text;
+    [Header("Componentes do di√°logo")]
+    public GameObject caixaDialogo;
+    public Image[] kidsDialogos;
+    public TextMeshProUGUI textoUI;
 
-    [Header("ReferÍncia ao invent·rio")]
+    [Header("Invent√°rio")]
     public Inventario inventario;
 
-    [Header("Textos de cada di·logo")]
-    public string[] textosDialogos; // definir manualmente pelo Inspector
-
-    [Header("Textos Iniciais da Protagonista")]
-    public string[] falasIniciais; // Definir manualmente pelo inspector
-    private int indexFala = 0;
-    private string[] falasAtuais;
-
-    [Header("Textos Iniciais da Protagonista")]
+    [Header("Textos de di√°logo")]
+    public string[] textosDialogos; // padr√£o
+    public string[] falasIniciais;
     public string[] falasCristal1;
     public string[] falasCristal2;
     public string[] falasCristal3;
     public string[] falasCristal4;
 
-    [Header("Troca de cena")]
-    public string nomecena;
-    private bool trocarCenaNoProximoClique = false;
+    [Header("Cena ao finalizar di√°logo")]
+    public string nomeCena; // preencha no Inspector
 
-    private bool dialogoAberto = false;
-    private bool dialogoInicialAtivo = false;
+    [Header("Objetos do cen√°rio")]
+    public GameObject cristalGrande;
+    public GameObject[] cristaisPequenos;
+    public GameObject cenarioDescolorido;
+    public GameObject cenarioColorido;
 
-    [Header("Objetos do cen·rio")]
-    public GameObject Cristal_Grande;
-    public GameObject[] Cristais_Pequenos;
-    public GameObject Cenario_Descolorido;
-    public GameObject Cenario_Colorido;
-
+    private int indexFala = 0;
+    private string[] falasAtuais;
     private int cristalAtual = 0;
 
     void Start()
     {
-        // Desativa todos os Kids e a caixa
-        foreach (var kid in KidsDialogos)
+        foreach (var kid in kidsDialogos)
             kid.enabled = false;
 
-        if (Caixa_de_dialogo == null)
-            Caixa_de_dialogo = gameObject;
+        if (caixaDialogo == null)
+            caixaDialogo = gameObject;
 
-        Caixa_de_dialogo.SetActive(false);
-
-        Cristal_Grande.SetActive(false);
-
-        Cenario_Colorido.SetActive(false);
-
+        caixaDialogo.SetActive(false);
+        cristalGrande.SetActive(false);
+        cenarioColorido.SetActive(false);
         DesativarCristais();
 
-        IniciarDialogosExtra(falasIniciais);
+        IniciarDialogo(falasIniciais);
     }
 
     private void DesativarCristais()
     {
-        foreach(var cristal in Cristais_Pequenos)
-        {
-            if(cristal != null)
-            {
-                cristal.SetActive(false);
-            }
-        }
+        foreach (var cristal in cristaisPequenos)
+            if (cristal != null) cristal.SetActive(false);
 
-        if (Cristal_Grande != null)
-        {
-            Cristal_Grande.SetActive(false);
-        }
+        if (cristalGrande != null) cristalGrande.SetActive(false);
     }
 
-    private void AtivarCristais(int indexCristal)
+    private void AtivarCristais(int index)
     {
-        foreach(var cristal in Cristais_Pequenos)
-        {
-            if(cristal != null)
-            {
-                cristal.SetActive(true);
-            }
-        }
+        foreach (var cristal in cristaisPequenos)
+            if (cristal != null) cristal.SetActive(true);
 
-        if(indexCristal == 3 && Cristal_Grande != null)
-        {
-            Cristal_Grande.SetActive(true);
-        }
+        if (index == 3 && cristalGrande != null)
+            cristalGrande.SetActive(true);
     }
 
-
-    //Di·logos Iniciais
-    public void IniciarDialogosExtra(string[] falas)
+    public void IniciarDialogo(string[] falas)
     {
         if (falas == null || falas.Length == 0) return;
 
-        Caixa_de_dialogo.SetActive(true);
-        dialogoAberto = true;
-        dialogoInicialAtivo = true;
-
+        caixaDialogo.SetActive(true);
         falasAtuais = falas;
         indexFala = 0;
-
         DesativarCristais();
-
         MostrarFalaAtual();
     }
 
-    public void ProximaDialogo()
+    public void ProximoDialogo()
     {
-        if (!dialogoInicialAtivo)
-        {
-            FecharDialogo();
-            return;
-        }
-
         indexFala++;
 
         if (falasAtuais != null && indexFala < falasAtuais.Length)
@@ -130,86 +90,61 @@ public class Dialogo : MonoBehaviour
         }
         else
         {
-            // Chegou ao final do di·logo atual
-            dialogoInicialAtivo = false;
             FecharDialogo();
 
-            // Trocar de cena somente se for o di·logo 4
-            if (falasAtuais == falasCristal4)
-            {
-                SceneManager.LoadScene(nomecena);
-            }
+            // Troca de cena automaticamente
+            if (!string.IsNullOrEmpty(nomeCena))
+                SceneManager.LoadScene(nomeCena);
         }
     }
 
     private void MostrarFalaAtual()
     {
-        if(falasAtuais != null && indexFala < falasAtuais.Length)
-        {
-            text.text = falasAtuais[indexFala];
-        }
+        if (falasAtuais != null && indexFala < falasAtuais.Length)
+            textoUI.text = falasAtuais[indexFala];
     }
 
-    // Abre o di·logo dependendo do Index_Cristais
-    public void AbrirDialogoDireto(int indexCristal)
+    public void AbrirDialogoCristal(int indexCristal)
     {
-        //if (dialogoAberto) return;
-
-        Caixa_de_dialogo.SetActive(true);
-
-        if (indexCristal != 4 && dialogoAberto)
-            return;
-
-        dialogoAberto = true;
+        caixaDialogo.SetActive(true);
         cristalAtual = indexCristal;
 
-        // Desativa todas as imagens
-        for (int i = 0; i < KidsDialogos.Length; i++)
-            KidsDialogos[i].enabled = false;
+        foreach (var kid in kidsDialogos)
+            kid.enabled = false;
 
         DesativarCristais();
 
-        // Aqui vocÍ escolhe qual imagem mostrar dependendo do di·logo
-        if (indexCristal == 1)
+        switch (indexCristal)
         {
-            KidsDialogos[0].enabled = true;
-            IniciarDialogosExtra(falasCristal1);
-        }
-        else if (indexCristal == 2)
-        {
-            KidsDialogos[0].enabled = true;
-            IniciarDialogosExtra(falasCristal2);
-        }
-        else if (indexCristal == 3)
-        {
-            KidsDialogos[1].enabled = true;
-            KidsDialogos[0].enabled = false;
-            Cristal_Grande.SetActive(true);
-            IniciarDialogosExtra(falasCristal3);
-        }
-        else if (indexCristal == 4)
-        {
-            KidsDialogos[1].enabled = true;
-
-            Cenario_Colorido.SetActive(true);
-            Cenario_Descolorido.SetActive(false);
-            IniciarDialogosExtra(falasCristal4);
-
-            //Marca que o prÛximo clique apÛs o ˙ltimo di·logo vai trocar de cena
-            trocarCenaNoProximoClique = true;
+            case 1:
+                kidsDialogos[0].enabled = true;
+                IniciarDialogo(falasCristal1);
+                break;
+            case 2:
+                kidsDialogos[0].enabled = true;
+                IniciarDialogo(falasCristal2);
+                break;
+            case 3:
+                kidsDialogos[1].enabled = true;
+                kidsDialogos[0].enabled = false;
+                cristalGrande.SetActive(true);
+                IniciarDialogo(falasCristal3);
+                break;
+            case 4:
+                kidsDialogos[1].enabled = true;
+                cenarioColorido.SetActive(true);
+                cenarioDescolorido.SetActive(false);
+                IniciarDialogo(falasCristal4);
+                break;
         }
     }
 
-    // Chamado pelo bot„o para fechar
     public void FecharDialogo()
     {
-        Caixa_de_dialogo.SetActive(false);
+        caixaDialogo.SetActive(false);
 
-        // Desativa todas as imagens
-        for (int i = 0; i < KidsDialogos.Length; i++)
-            KidsDialogos[i].enabled = false;
-
-        dialogoAberto = false;
+        foreach (var kid in kidsDialogos)
+            kid.enabled = false;
 
         AtivarCristais(cristalAtual);
     }

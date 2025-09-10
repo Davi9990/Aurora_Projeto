@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+using TMPro; // para TextMeshProUGUI
 using UnityEngine;
 
 public class UI_Score : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreText; // certifique-se de arrastar no Inspector
 
-    // Update is called once per frame
     void Update()
     {
-        if(GameManeger.Instance != null)
+        // Verifica se a UI e o GameManager existem antes de atualizar
+        if (scoreText != null && GameManeger.Instance != null)
         {
             scoreText.text = "X " + GameManeger.Instance.score;
         }
