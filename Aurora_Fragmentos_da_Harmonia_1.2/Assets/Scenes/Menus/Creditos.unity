@@ -224,7 +224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56, y: -179}
+  m_AnchoredPosition: {x: 257, y: 29.000004}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209747784
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ally Dante: UI Design'
+  m_text: 'Ally Dante: \nDesign de UI'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -103}
+  m_AnchoredPosition: {x: -263, y: -336}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893427474
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Davi Ferreira: Development'
+  m_text: 'Davi Ferreira: \nDesenvolvimento Unity'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -54.431076, y: 0, z: -548.8614, w: -62.89341}
+  m_margin: {x: -54.431076, y: 0.000011444092, z: -548.8614, w: -62.89341}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -659,7 +659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159, y: 55}
+  m_AnchoredPosition: {x: -907, y: 27.000004}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110426487
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Eggsdraws: Auxiliar de Game Art'
+  m_text: 'Eggsdraws: \nAuxiliar de Arte de Jogos'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1074,7 +1074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -92, y: 348}
+  m_AnchoredPosition: {x: -100, y: 471}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444283842
@@ -1208,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -332, y: -259}
+  m_AnchoredPosition: {x: 258, y: -157}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466297414
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Anne Moraes: Narrative Design | Sound Design'
+  m_text: 'Anne Moraes: \nDesign Narrativo | Design de Som'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -1342,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -501, y: 133}
+  m_AnchoredPosition: {x: -476, y: 243}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1624930997
@@ -1365,7 +1365,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'FokkenVarbie: Game Design | Narrative Design | Game Art'
+  m_text: 'fokkenVarbie: \n Gestora de Projeto | Design de Jogos | Design Narrativo
+    | Arte Conceitual | Arte de Jogos'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -1399,7 +1400,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1428,7 +1429,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -54.431076, y: 0, z: -1312.768, w: -62.89341}
+  m_margin: {x: -54.431076, y: 0, z: -917.68744, w: -62.89341}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1523,7 +1524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -311, y: -24}
+  m_AnchoredPosition: {x: -1297, y: -157}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919893026
@@ -1546,7 +1547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Leticia Foltran: Game Design | Sound Design'
+  m_text: 'Leticia Foltran: \n Design de Jogos | Design de Som'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
@@ -1580,7 +1581,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
