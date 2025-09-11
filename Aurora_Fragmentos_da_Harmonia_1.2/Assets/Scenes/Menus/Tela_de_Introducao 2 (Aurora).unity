@@ -197,7 +197,7 @@ RectTransform:
   m_GameObject: {fileID: 22880494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.11375, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1.175, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1463789174}
@@ -206,8 +206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 34, y: -418}
-  m_SizeDelta: {x: 383.66, y: -496.42}
+  m_AnchoredPosition: {x: 244, y: -401.5}
+  m_SizeDelta: {x: 329.02002, y: -529}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22880496
 MonoBehaviour:
@@ -262,18 +262,47 @@ MonoBehaviour:
   CaixaDeDialogo: {fileID: 22880494}
   textoUI: {fileID: 2113474801}
   falas:
-  - "A escurid\xE3o avan\xE7a sobre Lumina. N\xE3o \xE9 a sombra da noite, mas a
-    das Sombras do Esquecimento, que se alimentam das vozes silenciadas, diluindo
-    a ess\xEAncia do que outrora foi paz."
-  - "Onde havia a vibrante tape\xE7aria da diversidade, agora resta apenas um cinza
-    opaco. A unidade que nos guiava, agora se quebra em incont\xE1veis fissuras.\r"
-  - "O cora\xE7\xE3o desta terra, o Grande Cristal da Harmonia, n\xE3o foi apenas
-    roubado, foi estilha\xE7ado. Seus fragmentos, cacos de luz e verdade, foram lan\xE7ados
-    aos quatro cantos de Lumina. "
-  - "Mas a reden\xE7\xE3o n\xE3o vir\xE1 com espadas ou feiti\xE7os. Cada peda\xE7o
-    do Cristal s\xF3 pode ser recuperado por meio de um ato sagrado: a escuta ativa,
-    a d\xE1diva de acolher a hist\xF3ria de quem foi calado pela indiferen\xE7a.\r"
-  nomeCena: Tela_de_Introducao 2 (Aurora)
+  - "O Grande Cristal se quebrou\u2026 E as Sombras do Esquecimento est\xE3o se espalhando.
+    Sinto que a paz de Lumina se desfaz a cada voz silenciada."
+  - "Preciso encontrar os fragmentos. Mas como? Sinto que talvez a resposta n\xE3o
+    esteja em lutar, e sim em ouvir.\r"
+  nomeCena: "Pra\xE7a"
+--- !u!1 &441957983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441957984}
+  m_Layer: 5
+  m_Name: Sprites_Aurora
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &441957984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441957983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1447188821}
+  m_Father: {fileID: 2056829004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -759.2599, y: -369.12}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &958002015
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +395,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1447188820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447188821}
+  - component: {fileID: 1447188823}
+  - component: {fileID: 1447188822}
+  m_Layer: 5
+  m_Name: Imagem_Aurora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1447188821
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447188820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.2375, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441957984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.49, y: 132}
+  m_SizeDelta: {x: 615.54, y: 567.24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1447188822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447188820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 74.7, y: 58.1, z: 71.98, w: 29.5}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0902e70ec6c170a4fb687dcf8118b3ab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1447188823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447188820}
+  m_CullTransparentMesh: 1
 --- !u!1 &1463789173
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +900,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 22880495}
+  - {fileID: 441957984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -830,14 +935,14 @@ RectTransform:
   m_GameObject: {fileID: 2113474799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.95, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 22880495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147, y: 93}
+  m_AnchoredPosition: {x: -147, y: 102}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113474801
@@ -923,7 +1028,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -469.87216, y: -2.3792953, z: -644.5389, w: -207.74347}
+  m_margin: {x: -469.87216, y: 0, z: -644.5389, w: -207.74347}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

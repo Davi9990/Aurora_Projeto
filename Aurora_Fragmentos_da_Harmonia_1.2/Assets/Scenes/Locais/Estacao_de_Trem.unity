@@ -122,6 +122,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &19877145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 19877146}
+  - component: {fileID: 19877148}
+  - component: {fileID: 19877147}
+  m_Layer: 5
+  m_Name: Imagem_Aurora_Feliz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &19877146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19877145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.2375, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481814634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.49, y: 132}
+  m_SizeDelta: {x: 615.54, y: 567.24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &19877147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19877145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 74.7, y: 58.1, z: 71.98, w: 29.5}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9c132c57d42448f43b79ec89c8c4ac7a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &19877148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19877145}
+  m_CullTransparentMesh: 1
 --- !u!1 &255747703
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +375,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295303734}
   m_CullTransparentMesh: 1
---- !u!1 &357509354
+--- !u!1 &481814633
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -308,73 +383,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 357509355}
-  - component: {fileID: 357509357}
-  - component: {fileID: 357509356}
+  - component: {fileID: 481814634}
   m_Layer: 5
-  m_Name: Imagem_Aurora
+  m_Name: Sprites_Aurora
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &357509355
+--- !u!224 &481814634
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357509354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 481814633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.2375, z: 1}
+  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2069379701}
+  m_Children:
+  - {fileID: 19877146}
+  - {fileID: 1700048373}
+  m_Father: {fileID: 1523167561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.49, y: 132}
-  m_SizeDelta: {x: 615.54, y: 567.24}
+  m_AnchoredPosition: {x: -759.2599, y: -369.12}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &357509356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357509354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 74.7, y: 58.1, z: 71.98, w: 29.5}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9c132c57d42448f43b79ec89c8c4ac7a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &357509357
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357509354}
-  m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 666092239}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.5335, y: 0.3, z: 0}
+  m_LocalPosition: {x: -4.5, y: 2.15, z: 0}
   m_LocalScale: {x: 0.4168962, y: 0.43704784, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -894,38 +931,35 @@ MonoBehaviour:
   - "Agora que minhas palavras foram ouvidas, sinto coregem e esperan\xE7a de que
     minha voz importar\xE1."
   falasIniciais:
-  - "Lumia est\xE1 cinza... O que aconteceu com as cores? Sinto que h\xE1 um fragmento
-    aqui perto, mas ele est\xE1 escondido em meio ao silencio. Preciso prestar aten\xE7\xE3o,
-    de verdade! "
+  - "A esta\xE7\xE3o de trem... Sinto mais um fragmento aqui, mas h\xE1 uma tristeza
+    no ar. Sinto que ele est\xE1 escondido em uma pessoa que est\xE1 \xE0 espera
+    de ser vista."
   falasCristal1:
-  - "Oi. Me desculpe se estou te incomodando. Eu vi que voce est\xE1 um pouco cabisbaixa.
-    Est\xE1 tudo bem?"
-  - "\xC0s vezes, quando eu falo, a voz sai baixinha... Ningu\xE9m me escuta de verdade.
-    Parece que as palavras somem no ar antes de chegarem em algu\xE9m."
-  - "Eu entendo como \xE9... as palavras que a gente guarda parecem gigantes, mas
-    quando falamos, parecem t\xE3o pequenas. N\xE3o se preocupe, eu estou ouvindo.
-    Elas chegam em mim. E elas s\xE3o impostantes para mim. Por favor, me diga mais."
+  - "Oi. Eu me chamo Aurora. Posso me sentar aqui com voc\xEA?"
+  - "A maioria das pessoas n\xE3o me enxerga como quem eu realmente sou. Essa falta
+    de reconhecimento faz com que eu questione meu pr\xF3prio valor. Ser\xE1 que
+    eu sou real?"
+  - "Eu entendo que voc\xEA possa sentir que n\xE3o pertence a lugar nenhum. Mas
+    saiba que o seu valor n\xE3o depende do que os outros pensam. Voc\xEA \xE9 v\xE1lido,
+    e voc\xEA \xE9 real."
   falasCristal2:
-  - "Eu me sinto t\xE3o pequena e invis\xEDvel aqui na pra\xE7a. As pessoas passam
-    correndo e n\xE3o me veem. \xC9 como se as minhas ideias, que s\xE3o t\xE3o grandes
-    na minha cabe\xE7a, n\xE3o fossem levadas a s\xE9rio."
-  - "As suas palavras n\xE3o somem no ar. Elas chegam em mim. E elas s\xE3o importantes
-    para mim. Por favor, me diga mais."
+  - "Ter a minha identidade invalidada \xE9 como ter meu espa\xE7o negado no mundo.
+    \xC9 como se as pessoas quisessem me prender em uma caixa que n\xE3o \xE9 minha."
+  - "A sua exist\xEAncia n\xE3o \xE9 uma negocia\xE7\xE3o. Voc\xEA tem o direito
+    de existir, de amar e de ser quem voc\xEA \xE9. E eu preciso que voc\xEA me diga
+    quem voc\xEA \xE9. Eu quero te ver."
   falasCristal3:
-  - "Quando algu\xE9m me escuta de verdade, e n\xE3o s\xF3 ouve, \xE9 como se eu
-    pudesse, de repente, ter um tamanho maior. Sinto que posso existir de verdade
-    e crescer."
-  - "Eu vejo voc\xEA, e escuto o que voc\xEA tem a dizer. E saiba que a sua voz tem
-    o poder de mudar o mundo. Voc\xEA s\xF3 precisa ser ouvida. E eu estou aqui para
-    te ouvir."
+  - "Quando algu\xE9m me chama pelo meu nome, ou me reconhece, eu sinto o meu ser
+    inteiro. A alma e o corpo se alinham em um s\xF3."
+  - "Por favor, me diga o seu nome. Eu quero cham\xE1-lo por ele."
   falasCristal4:
-  - "Agora que minhas palavras foram ouvidas, sinto que eu tamb\xE9m tenho um lugar
-    no mundo. Sinto uma coragem enorme e a esperan\xE7a de que, um dia, a minha voz
-    vai importar para todos."
-  - "Sua voz \xE9 a chave para devolver a luz a este lugar. O que voc\xEA tem a dizer
-    ecoa em mim agora, e eu prometo que vou us\xE1-la para mostrar a todos que cada
-    palavra, por mais baixinha que seja, tem um lugar no mundo. Suas palavras importam,
-    Elisa. E eu sinto que a minha voz tamb\xE9m se fortaleceu com a sua."
+  - "Depois de ser visto com olhos sens\xEDveis, na minha pele real, sinto seguran\xE7a
+    e coragem para viver novamente. \xC9 como se eu pudesse, finalmente, viajar livremente."
+  - "Diego... Obrigada por me permitir te ver. E eu te vejo. Na sua pele real, na
+    sua ess\xEAncia. "
+  - "A sua coragem de ser quem voc\xEA \xE9 me ensinou a mais valiosa de todas as
+    li\xE7\xF5es: que a nossa ess\xEAncia \xE9 a nossa maior beleza. E a sua exist\xEAncia
+    \xE9 uma prova de que a vida \xE9 mais bela quando se vive com verdade."
   nomeCena: Escadaria
   cristalGrande: {fileID: 1457025894}
   cristaisPequenos:
@@ -984,7 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  m_Color: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1187,7 +1221,7 @@ Transform:
   m_GameObject: {fileID: 1116642930}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 2.46, z: 0}
+  m_LocalPosition: {x: 1.38, y: 3.73, z: 0}
   m_LocalScale: {x: 0.422187, y: 0.48273826, z: 1.8574}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1360,7 +1394,7 @@ Transform:
   m_GameObject: {fileID: 1176727214}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.22, y: 3.12, z: 0}
+  m_LocalPosition: {x: 3.87, y: 0.35, z: 0}
   m_LocalScale: {x: 0.6391676, y: 0.73083884, z: 2.812}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1928,7 +1962,6 @@ RectTransform:
   m_Children:
   - {fileID: 295303735}
   - {fileID: 2118891727}
-  - {fileID: 1941008649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1965,8 +1998,8 @@ Transform:
   m_GameObject: {fileID: 1457025894}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4997, y: 0.68, z: 0}
-  m_LocalScale: {x: 0.6269661, y: 0.848504, z: 1.3094}
+  m_LocalPosition: {x: 0.5, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1695434115}
@@ -2254,7 +2287,7 @@ RectTransform:
   - {fileID: 868342300}
   - {fileID: 1546501111}
   - {fileID: 1705270808}
-  - {fileID: 2069379701}
+  - {fileID: 481814634}
   - {fileID: 685079864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2463,17 +2496,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Texto de teste para o di\xE1logo."
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dec74bcf63c2a9744b942d5f78e1bef8, type: 2}
-  m_sharedMaterial: {fileID: -52329012225308086, guid: dec74bcf63c2a9744b942d5f78e1bef8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
+  m_sharedMaterial: {fileID: -7775956534151022520, guid: 854ca8781448fd747a32a541f7b4fee1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.84705883, g: 0.81960785, b: 0.7882353, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2490,8 +2523,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2526,7 +2559,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.619301, y: 0, z: 124.088196, w: 61.262558}
+  m_margin: {x: -1.536293, y: 0, z: 124.088196, w: 61.262558}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2724,6 +2757,81 @@ Transform:
   - {fileID: 1457025895}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1700048372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700048373}
+  - component: {fileID: 1700048375}
+  - component: {fileID: 1700048374}
+  m_Layer: 5
+  m_Name: Imagem_Aurora_Triste
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1700048373
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700048372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.2375, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 481814634}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.49, y: 132}
+  m_SizeDelta: {x: 615.54, y: 567.24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1700048374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700048372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 74.7, y: 58.1, z: 71.98, w: 29.5}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0902e70ec6c170a4fb687dcf8118b3ab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1700048375
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700048372}
+  m_CullTransparentMesh: 1
 --- !u!1 &1705270807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,81 +3120,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856454781}
   m_CullTransparentMesh: 1
---- !u!1 &1941008648
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1941008649}
-  - component: {fileID: 1941008651}
-  - component: {fileID: 1941008650}
-  m_Layer: 5
-  m_Name: Imagem_Cristal_Grande (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1941008649
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941008648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.76714975, y: 0.75285476, z: 1.5568}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1413153454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -696.47015, y: 292}
-  m_SizeDelta: {x: 138.91, y: 136.72}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1941008650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941008648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc82f62a023466a42b6e77f6a5d220b1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1941008651
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941008648}
-  m_CullTransparentMesh: 1
 --- !u!1 &1957337753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,42 +3403,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971961530}
   m_CullTransparentMesh: 1
---- !u!1 &2069379700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2069379701}
-  m_Layer: 5
-  m_Name: Sprites_Aurora
-  m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2069379701
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069379700}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 357509355}
-  m_Father: {fileID: 1523167561}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -759.2599, y: -369.12}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2106163093
 GameObject:
   m_ObjectHideFlags: 0
