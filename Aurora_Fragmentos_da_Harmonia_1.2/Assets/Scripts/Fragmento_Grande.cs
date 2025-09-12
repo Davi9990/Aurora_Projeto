@@ -10,20 +10,26 @@ public class Fragmento_Grande : MonoBehaviour
     public Dialogo dialogo;
     public TextMeshProUGUI text;
 
+    public AudioSource audioClip;
+
     void Start()
     {
         sprite_Cristal = GetComponent<SpriteRenderer>();
         sprite_Cristal.color = Color.white;
+
+        audioClip = GetComponent<AudioSource>();
     }
 
     private void OnMouseEnter()
     {
         sprite_Cristal.color = Color.white;
+        audioClip.Play();
     }
 
     private void OnMouseExit()
     {
         sprite_Cristal.color = Color.white;
+        audioClip.Stop();
     }
 
     public void OnMouseDown()

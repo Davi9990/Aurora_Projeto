@@ -8,20 +8,26 @@ public class Objeto_Identificado : MonoBehaviour
     public Inventario inventario;
     public Dialogo dialogo;
 
+    public AudioSource audioSource;
+
     void Start()
     {
         sprite_Cristal = GetComponent<SpriteRenderer>();
         sprite_Cristal.color = Color.clear;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnMouseEnter()
     {
         sprite_Cristal.color = Color.white;
+        audioSource.Play();
     }
 
     private void OnMouseExit()
     {
         sprite_Cristal.color = Color.clear;
+        audioSource.Stop();
     }
 
     public void OnMouseDown()
