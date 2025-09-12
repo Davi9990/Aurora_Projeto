@@ -887,6 +887,9 @@ MonoBehaviour:
   - {fileID: 1263502636}
   textoUI: {fileID: 1606469472}
   nomeUI: {fileID: 0}
+  auroraImagens:
+  - {fileID: 802097755}
+  - {fileID: 267351377}
   inventario: {fileID: 255747705}
   falasIniciais:
   - nome: Aurora
