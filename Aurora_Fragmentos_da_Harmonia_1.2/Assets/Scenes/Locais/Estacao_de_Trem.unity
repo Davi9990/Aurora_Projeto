@@ -859,6 +859,7 @@ RectTransform:
   m_Children:
   - {fileID: 1606469471}
   - {fileID: 1305104441}
+  - {fileID: 741109254}
   m_Father: {fileID: 1523167561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -921,45 +922,52 @@ MonoBehaviour:
   - {fileID: 1277703930}
   - {fileID: 1263502636}
   textoUI: {fileID: 1606469472}
+  nomeUI: {fileID: 1460596842}
   inventario: {fileID: 255747705}
-  textosDialogos:
-  - "\xC0s vezes,quando eu falo, ningu\xE9m me escuta. Parece que minhas palavras
-    n\xE3o importam."
-  - "Sinto-me pequena e invisivel.. como se minhas ideas n\xE3o fossem levadas a
-    s\xE9rio."
-  - "Quando algu\xE9m me escuta de verdade, sinto que posso existir e crescer"
-  - "Agora que minhas palavras foram ouvidas, sinto coregem e esperan\xE7a de que
-    minha voz importar\xE1."
   falasIniciais:
-  - "A esta\xE7\xE3o de trem... Sinto mais um fragmento aqui, mas h\xE1 uma tristeza
-    no ar. Sinto que ele est\xE1 escondido em uma pessoa que est\xE1 \xE0 espera
-    de ser vista."
+  - nome: Aurora
+    texto: "A esta\xE7\xE3o de trem... Sinto o \xFAltimo fragmento aqui, mas h\xE1
+      uma tristeza no ar. Sinto que ele est\xE1 escondido em uma pessoa que est\xE1
+      \xE0 espera de ser vista."
   falasCristal1:
-  - "Oi. Eu me chamo Aurora. Posso me sentar aqui com voc\xEA?"
-  - "A maioria das pessoas n\xE3o me enxerga como quem eu realmente sou. Essa falta
-    de reconhecimento faz com que eu questione meu pr\xF3prio valor. Ser\xE1 que
-    eu sou real?"
-  - "Eu entendo que voc\xEA possa sentir que n\xE3o pertence a lugar nenhum. Mas
-    saiba que o seu valor n\xE3o depende do que os outros pensam. Voc\xEA \xE9 v\xE1lido,
-    e voc\xEA \xE9 real."
+  - nome: Aurora
+    texto: "Oi. Eu me chamo Aurora. Posso me sentar aqui com voc\xEA?"
+  - nome: Luna
+    texto: "A maioria das pessoas n\xE3o me enxerga como quem eu realmente sou. Essa
+      falta de reconhecimento faz com que eu questione meu pr\xF3prio valor. Ser\xE1
+      que eu sou real?"
+  - nome: Aurora
+    texto: "Eu entendo que voc\xEA possa sentir que n\xE3o pertence a lugar nenhum.
+      Mas saiba que o seu valor n\xE3o depende do que os outros pensam. Voc\xEA \xE9
+      v\xE1lida, e voc\xEA \xE9 real."
   falasCristal2:
-  - "Ter a minha identidade invalidada \xE9 como ter meu espa\xE7o negado no mundo.
-    \xC9 como se as pessoas quisessem me prender em uma caixa que n\xE3o \xE9 minha."
-  - "A sua exist\xEAncia n\xE3o \xE9 uma negocia\xE7\xE3o. Voc\xEA tem o direito
-    de existir, de amar e de ser quem voc\xEA \xE9. E eu preciso que voc\xEA me diga
-    quem voc\xEA \xE9. Eu quero te ver."
+  - nome: Luna
+    texto: "Ter a minha identidade invalidada \xE9 como ter meu espa\xE7o negado
+      no mundo. \xC9 como se as pessoas quisessem me prender em uma caixa que n\xE3o
+      \xE9 minha."
+  - nome: Aurora
+    texto: "A sua exist\xEAncia n\xE3o \xE9 uma negocia\xE7\xE3o. Voc\xEA tem o direito
+      de existir, de amar e de ser quem voc\xEA \xE9. E eu preciso que voc\xEA me
+      diga quem voc\xEA \xE9. Eu quero te ver."
   falasCristal3:
-  - "Quando algu\xE9m me chama pelo meu nome, ou me reconhece, eu sinto o meu ser
-    inteiro. A alma e o corpo se alinham em um s\xF3."
-  - "Por favor, me diga o seu nome. Eu quero cham\xE1-lo por ele."
+  - nome: Luna
+    texto: "Quando algu\xE9m me chama pelo meu nome, ou me reconhece, eu sinto o
+      meu ser inteiro. A alma e o corpo se alinham em um s\xF3."
+  - nome: Aurora
+    texto: "Por favor, me diga o seu nome. Eu quero cham\xE1-la por ele."
   falasCristal4:
-  - "Depois de ser visto com olhos sens\xEDveis, na minha pele real, sinto seguran\xE7a
-    e coragem para viver novamente. \xC9 como se eu pudesse, finalmente, viajar livremente."
-  - "Diego... Obrigada por me permitir te ver. E eu te vejo. Na sua pele real, na
-    sua ess\xEAncia. "
-  - "A sua coragem de ser quem voc\xEA \xE9 me ensinou a mais valiosa de todas as
-    li\xE7\xF5es: que a nossa ess\xEAncia \xE9 a nossa maior beleza. E a sua exist\xEAncia
-    \xE9 uma prova de que a vida \xE9 mais bela quando se vive com verdade."
+  - nome: Luna
+    texto: "Depois de ser vista com olhos sens\xEDveis, na minha pele real, sinto
+      seguran\xE7a e coragem para viver novamente. \xC9 como se eu pudesse, finalmente,
+      viajar livremente."
+  - nome: Aurora
+    texto: "Luna... O seu nome \xE9 t\xE3o lindo quanto a luz da lua. Obrigada por
+      me permitir te ver. E eu te vejo. Na sua pele real, na sua ess\xEAncia."
+  - nome: Aurora
+    texto: "A sua coragem de ser quem voc\xEA \xE9 me ensinou a mais valiosa de todas
+      as li\xE7\xF5es: que a nossa ess\xEAncia \xE9 a nossa maior beleza. E a sua
+      exist\xEAncia \xE9 uma prova de que a vida \xE9 mais bela quando se vive com
+      verdade."
   nomeCena: Escadaria
   cristalGrande: {fileID: 1457025894}
   cristaisPequenos:
@@ -968,6 +976,82 @@ MonoBehaviour:
   - {fileID: 1116642930}
   cenarioDescolorido: {fileID: 868342299}
   cenarioColorido: {fileID: 1546501110}
+--- !u!1 &741109253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741109254}
+  - component: {fileID: 741109256}
+  - component: {fileID: 741109255}
+  m_Layer: 5
+  m_Name: Porta_Nomes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &741109254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741109253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.6247187, y: 1.6112679, z: 1.8932396}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1460596841}
+  m_Father: {fileID: 685079864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -494, y: 185.99991}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &741109255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741109253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 72e19d3382ba8f24e99dccd339e6bdfb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &741109256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741109253}
+  m_CullTransparentMesh: 1
 --- !u!1 &868342299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,7 +2082,7 @@ Transform:
   m_GameObject: {fileID: 1457025894}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0.64, y: 1.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2143,6 +2227,140 @@ MonoBehaviour:
   inventario: {fileID: 255747705}
   dialogo: {fileID: 685079867}
   text: {fileID: 0}
+--- !u!1 &1460596840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460596841}
+  - component: {fileID: 1460596843}
+  - component: {fileID: 1460596842}
+  m_Layer: 5
+  m_Name: Texto_Nome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1460596841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460596840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.025, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 741109254}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7, y: -50}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1460596842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460596840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Nome
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 6.9
+  m_fontSizeBase: 6.9
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 63.583103, y: 0, z: 71.74583, w: 33.204666}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1460596843
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460596840}
+  m_CullTransparentMesh: 1
 --- !u!1 &1506922419
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,26 +5,37 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class Fala
+{
+    public string nome;
+    [TextArea(2, 5)]
+    public string texto;
+}
+
 public class Dialogo : MonoBehaviour
 {
     [Header("Componentes do diálogo")]
     public GameObject caixaDialogo;
     public Image[] kidsDialogos;
     public TextMeshProUGUI textoUI;
+    public TextMeshProUGUI nomeUI;
+
+    [Header("Aurora (imagens)")]
+    public Image[] auroraImagens;   // [0] = triste, [1] = feliz
 
     [Header("Inventário")]
     public Inventario inventario;
 
-    [Header("Textos de diálogo")]
-    public string[] textosDialogos; // padrão
-    public string[] falasIniciais;
-    public string[] falasCristal1;
-    public string[] falasCristal2;
-    public string[] falasCristal3;
-    public string[] falasCristal4;
+    [Header("Fal falas (com nome + texto)")]
+    public Fala[] falasIniciais;
+    public Fala[] falasCristal1;
+    public Fala[] falasCristal2;
+    public Fala[] falasCristal3;
+    public Fala[] falasCristal4;
 
     [Header("Cena ao finalizar diálogo")]
-    public string nomeCena; // preencha no Inspector
+    public string nomeCena;
 
     [Header("Objetos do cenário")]
     public GameObject cristalGrande;
@@ -33,7 +44,7 @@ public class Dialogo : MonoBehaviour
     public GameObject cenarioColorido;
 
     private int indexFala = 0;
-    private string[] falasAtuais;
+    private Fala[] falasAtuais;
     private int cristalAtual = 0;
     private bool trocarCena = false;
 
@@ -50,7 +61,19 @@ public class Dialogo : MonoBehaviour
         cenarioColorido.SetActive(false);
         DesativarCristais();
 
+        // deixa só a Aurora triste visível
+        AtualizarAurora(0);
+
         IniciarDialogo(falasIniciais);
+    }
+
+    private void AtualizarAurora(int indice)
+    {
+        if (auroraImagens == null || auroraImagens.Length == 0) return;
+
+        for (int i = 0; i < auroraImagens.Length; i++)
+            if (auroraImagens[i] != null)
+                auroraImagens[i].enabled = (i == indice);
     }
 
     private void DesativarCristais()
@@ -58,7 +81,8 @@ public class Dialogo : MonoBehaviour
         foreach (var cristal in cristaisPequenos)
             if (cristal != null) cristal.SetActive(false);
 
-        if (cristalGrande != null) cristalGrande.SetActive(false);
+        if (cristalGrande != null)
+            cristalGrande.SetActive(false);
     }
 
     private void AtivarCristais(int index)
@@ -70,7 +94,7 @@ public class Dialogo : MonoBehaviour
             cristalGrande.SetActive(true);
     }
 
-    public void IniciarDialogo(string[] falas, bool cenaNoFinal = false)
+    public void IniciarDialogo(Fala[] falas, bool cenaNoFinal = false)
     {
         if (falas == null || falas.Length == 0) return;
 
@@ -94,7 +118,6 @@ public class Dialogo : MonoBehaviour
         {
             FecharDialogo();
 
-            // Só troca de cena se for diálogo 4
             if (trocarCena && !string.IsNullOrEmpty(nomeCena))
                 SceneManager.LoadScene(nomeCena);
         }
@@ -102,8 +125,11 @@ public class Dialogo : MonoBehaviour
 
     private void MostrarFalaAtual()
     {
-        if (falasAtuais != null && indexFala < falasAtuais.Length)
-            textoUI.text = falasAtuais[indexFala];
+        if (falasAtuais == null || indexFala >= falasAtuais.Length) return;
+
+        textoUI.text = falasAtuais[indexFala].texto;
+        if (nomeUI != null)
+            nomeUI.text = falasAtuais[indexFala].nome;
     }
 
     public void AbrirDialogoCristal(int indexCristal)
@@ -115,6 +141,9 @@ public class Dialogo : MonoBehaviour
             kid.enabled = false;
 
         DesativarCristais();
+
+        // por padrão mostra Aurora triste (índice 0)
+        AtualizarAurora(0);
 
         switch (indexCristal)
         {
@@ -129,7 +158,10 @@ public class Dialogo : MonoBehaviour
             case 3:
                 kidsDialogos[1].enabled = true;
                 kidsDialogos[0].enabled = false;
-                //cristalGrande.SetActive(true);
+
+                // No terceiro diálogo Aurora feliz (índice 1)
+                AtualizarAurora(1);
+
                 IniciarDialogo(falasCristal3);
                 break;
             case 4:
@@ -137,6 +169,7 @@ public class Dialogo : MonoBehaviour
                 cenarioColorido.SetActive(true);
                 cenarioDescolorido.SetActive(false);
                 IniciarDialogo(falasCristal4, true);
+                AtualizarAurora(1);
                 break;
         }
     }

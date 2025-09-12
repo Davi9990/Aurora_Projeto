@@ -122,6 +122,140 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36327628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36327629}
+  - component: {fileID: 36327630}
+  - component: {fileID: 36327631}
+  m_Layer: 5
+  m_Name: Texto_Nome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &36327629
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36327628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.025, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 391435169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7, y: -50}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &36327630
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36327628}
+  m_CullTransparentMesh: 1
+--- !u!114 &36327631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36327628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Nome
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 6.9
+  m_fontSizeBase: 6.9
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 63.583103, y: 0, z: 71.74583, w: 33.204666}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &248772946
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +395,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255747703}
+  m_CullTransparentMesh: 1
+--- !u!1 &391435168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391435169}
+  - component: {fileID: 391435171}
+  - component: {fileID: 391435170}
+  m_Layer: 5
+  m_Name: Porta_Nomes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &391435169
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391435168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.6247187, y: 1.6112679, z: 1.8932396}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 36327629}
+  m_Father: {fileID: 685079864}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -494, y: 185.99994}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &391435170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391435168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 72e19d3382ba8f24e99dccd339e6bdfb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &391435171
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391435168}
   m_CullTransparentMesh: 1
 --- !u!1 &435207393
 GameObject:
@@ -756,6 +966,7 @@ RectTransform:
   m_Children:
   - {fileID: 1606469471}
   - {fileID: 1305104441}
+  - {fileID: 391435169}
   m_Father: {fileID: 1523167561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -818,47 +1029,51 @@ MonoBehaviour:
   - {fileID: 1277703930}
   - {fileID: 1263502636}
   textoUI: {fileID: 1606469472}
+  nomeUI: {fileID: 36327631}
   inventario: {fileID: 255747705}
-  textosDialogos:
-  - "\xC0s vezes,quando eu falo, ningu\xE9m me escuta. Parece que minhas palavras
-    n\xE3o importam."
-  - "Sinto-me pequena e invisivel.. como se minhas ideas n\xE3o fossem levadas a
-    s\xE9rio."
-  - "Quando algu\xE9m me escuta de verdade, sinto que posso existir e crescer"
-  - "Agora que minhas palavras foram ouvidas, sinto coregem e esperan\xE7a de que
-    minha voz importar\xE1."
   falasIniciais:
-  - "Este jardim... As cores parecem fora de lugar. Sinto que um novo fragmento est\xE1
-    aqui, mas a sua frequ\xEAncia \xE9 diferente de tudo que eu j\xE1 senti. Preciso
-    tentar entender. Preciso sentir a sua melodia."
+  - nome: Aurora
+    texto: "Este jardim... As cores parecem fora de lugar. Sinto que um novo fragmento
+      est\xE1 aqui, mas a sua frequ\xEAncia \xE9 diferente de tudo que eu j\xE1 senti.
+      Preciso tentar entender. Preciso sentir a sua melodia."
   falasCristal1:
-  - "Oi. Eu n\xE3o entendo muito sobre esses cristais, mas o seu parece ser \xFAnico."
-  - "Eu me sinto fora do ritmo. Minha mente pensa de um jeito diferente e isso me
-    faz sentir isolada, como se eu n\xE3o estivesse dan\xE7ando na mesma m\xFAsica
-    que todo mundo."
-  - "Eu entendo que \xE9 dif\xEDcil quando as pessoas n\xE3o veem as coisas do jeito
-    que a gente v\xEA. Mas, por favor, me diga o que voc\xEA enxerga nesse cristal.
-    Me diga o que voc\xEA enxerga no mundo."
+  - nome: Aurora
+    texto: "Oi. Eu n\xE3o entendo muito sobre cristais, mas o seu parece ser \xFAnico."
+  - nome: Ariel
+    texto: "Eu me sinto fora do ritmo. Minha mente pensa de um jeito diferente e
+      isso me faz sentir isolado, como se eu n\xE3o estivesse dan\xE7ando na mesma
+      m\xFAsica que todo mundo."
+  - nome: Aurora
+    texto: "Eu entendo que \xE9 dif\xEDcil quando as pessoas n\xE3o veem as coisas
+      do jeito que a gente v\xEA. Mas, por favor, me diga o que voc\xEA enxerga nesse
+      cristal. Me diga o que voc\xEA enxerga no mundo."
   falasCristal2:
-  - "\xC9 doloroso quando minhas ideias s\xE3o descartadas. Ningu\xE9m entende o
-    meu ponto de vista e isso machuca mais do que qualquer coisa que me digam. \xC9
-    como se eu n\xE3o tivesse o direito de ser eu mesma."
-  - "O que voc\xEA sente? O que voc\xEA pensa? Me diga o que h\xE1 de diferente no
-    seu olhar. Eu prometo que n\xE3o vou julgar."
+  - nome: Ariel
+    texto: "\xC9 doloroso quando minhas ideias s\xE3o descartadas. Ningu\xE9m entende
+      o meu ponto de vista e isso machuca mais do que qualquer coisa que me digam.
+      \xC9 como se eu n\xE3o tivesse o direito de ser eu mesmo."
+  - nome: Aurora
+    texto: "O que voc\xEA sente? O que voc\xEA pensa? Me diga o que h\xE1 de diferente
+      no seu olhar. Eu prometo que n\xE3o vou julgar."
   falasCristal3:
-  - "Quando algu\xE9m se esfor\xE7a para tentar me compreender, eu sinto que posso
-    existir plenamente. Sinto que eu tamb\xE9m sou parte da can\xE7\xE3o."
-  - "Eu sinto que voc\xEA tem uma vis\xE3o especial do mundo. E ela \xE9 valiosa.
-    Preciso entender o que voc\xEA tem a me dizer."
+  - nome: Ariel
+    texto: "Quando algu\xE9m se esfor\xE7a para tentar me compreender, eu sinto que
+      posso existir plenamente. Sinto que eu tamb\xE9m sou parte da can\xE7\xE3o."
+  - nome: Aurora
+    texto: "Eu sinto que voc\xEA tem uma vis\xE3o especial do mundo. E ela \xE9 valiosa.
+      Preciso entender o que voc\xEA tem a me dizer"
   falasCristal4:
-  - "Sinto que o meu modo de ver o mundo, com todas as suas cores e nuances, importa
-    de verdade. Agora, eu sei que posso encontrar o meu lugar, assim como todos os
-    pedacinhos de um cristal se juntam para formar uma s\xF3 pe\xE7a."
-  - "A sua percep\xE7\xE3o me abriu os olhos. O mundo n\xE3o \xE9 uma s\xF3 cor.
-    Nem uma s\xF3 m\xFAsica. A beleza de Lumina \xE9 a sua diversidade. "
-  - "Sua voz me ensinou que o mundo se torna mais belo quando todos podem ser quem
-    s\xE3o. A sua forma de ver as coisas n\xE3o s\xF3 importa, como \xE9 essencial
-    para que o mundo se torne mais completo."
+  - nome: Ariel
+    texto: "Sinto que o meu modo de ver o mundo, com todas as suas cores e nuances,
+      importa de verdade. Agora, eu sei que posso encontrar o meu lugar, assim como
+      todos os pedacinhos de um cristal se juntam para formar uma s\xF3 pe\xE7a."
+  - nome: Aurora
+    texto: "A sua percep\xE7\xE3o me abriu os olhos. O mundo n\xE3o \xE9 uma s\xF3
+      cor. Nem uma s\xF3 m\xFAsica. A beleza de Lumina \xE9 a sua diversidade. Sua
+      voz me ensinou que o mundo se torna mais belo quando todos podem ser quem s\xE3o. "
+  - nome: Aurora
+    texto: "A sua forma de ver as coisas n\xE3o s\xF3 importa, como \xE9 essencial
+      para que o mundo se torne mais completo."
   nomeCena: Estacao_de_Trem
   cristalGrande: {fileID: 1457025894}
   cristaisPequenos:
@@ -1855,7 +2070,7 @@ Transform:
   m_GameObject: {fileID: 1457025894}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.2, z: 0}
+  m_LocalPosition: {x: 1.32, y: 1.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
