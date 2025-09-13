@@ -11,22 +11,34 @@ public class Objeto_Identificado : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip cristalColetado;
 
+    public ParticleSystem brilhoCristal;
+
     void Start()
     {
         sprite_Cristal = GetComponent<SpriteRenderer>();
         sprite_Cristal.color = Color.clear;
+
+        if(brilhoCristal != null)
+        {
+            brilhoCristal.Stop();
+            brilhoCristal.Clear();
+        }
     }
 
     private void OnMouseEnter()
     {
         sprite_Cristal.color = Color.white;
         if(audioSource != null) audioSource.Play();
+
+        if(brilhoCristal != null) brilhoCristal.Play();
     }
 
     private void OnMouseExit()
     {
         sprite_Cristal.color = Color.clear;
         if(audioSource != null) audioSource.Stop();
+
+        if(brilhoCristal != null) brilhoCristal.Stop();
     }
 
     public void OnMouseDown()
@@ -45,6 +57,11 @@ public class Objeto_Identificado : MonoBehaviour
             if(cristalColetado != null)
             {
                 AudioSource.PlayClipAtPoint(cristalColetado, transform.position);
+            }
+            
+            if(brilhoCristal != null)
+            {
+                brilhoCristal.Stop();
             }
 
             Destroy(gameObject);
