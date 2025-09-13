@@ -11,6 +11,7 @@ public class Fragmento_Grande : MonoBehaviour
     public TextMeshProUGUI text;
 
     public AudioSource audioClip;
+    public AudioClip cristalgrandecoletado;
 
     void Start()
     {
@@ -23,13 +24,21 @@ public class Fragmento_Grande : MonoBehaviour
     private void OnMouseEnter()
     {
         sprite_Cristal.color = Color.white;
-        audioClip.Play();
+
+        if (audioClip != null && audioClip.clip != null)
+        {
+            audioClip.PlayOneShot(audioClip.clip);
+        }
     }
 
     private void OnMouseExit()
     {
         sprite_Cristal.color = Color.white;
-        audioClip.Stop();
+
+        if (audioClip != null)
+        {
+            audioClip.Stop();
+        }
     }
 
     public void OnMouseDown()
@@ -38,6 +47,7 @@ public class Fragmento_Grande : MonoBehaviour
         {
             // Incrementa o índice do cristal no inventário
             inventario.Index_Cristais += 1;
+
 
             // Chama o novo método do Dialogo
             if (dialogo != null)
@@ -48,6 +58,11 @@ public class Fragmento_Grande : MonoBehaviour
             // Incrementa o placar global (só o cristal final faz isso!)
             if (GameManeger.Instance != null)
                 GameManeger.Instance.AddScore(1);
+
+            if(cristalgrandecoletado != null)
+            {
+                AudioSource.PlayClipAtPoint(cristalgrandecoletado, transform.position);
+            }
 
             Destroy(gameObject);
             Debug.Log("Cristal destruído e pontuação adicionada!");

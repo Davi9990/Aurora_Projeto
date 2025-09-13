@@ -792,6 +792,7 @@ MonoBehaviour:
   inventario: {fileID: 255747705}
   dialogo: {fileID: 685079867}
   audioSource: {fileID: 666092245}
+  cristalColetado: {fileID: 8300000, guid: 19c498416e8d2cb44b325b984d2b1ebd, type: 3}
 --- !u!82 &666092245
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1697,6 +1698,7 @@ MonoBehaviour:
   inventario: {fileID: 255747705}
   dialogo: {fileID: 685079867}
   audioSource: {fileID: 666092245}
+  cristalColetado: {fileID: 8300000, guid: 19c498416e8d2cb44b325b984d2b1ebd, type: 3}
 --- !u!82 &1116642936
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1968,6 +1970,7 @@ MonoBehaviour:
   inventario: {fileID: 255747705}
   dialogo: {fileID: 685079867}
   audioSource: {fileID: 666092245}
+  cristalColetado: {fileID: 8300000, guid: 19c498416e8d2cb44b325b984d2b1ebd, type: 3}
 --- !u!82 &1176727220
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2666,6 +2669,7 @@ MonoBehaviour:
   dialogo: {fileID: 685079867}
   text: {fileID: 0}
   audioClip: {fileID: 1457025901}
+  cristalgrandecoletado: {fileID: 8300000, guid: 7a505dae03b4f964bb8f75026fa6c7e8, type: 3}
 --- !u!82 &1457025901
 AudioSource:
   m_ObjectHideFlags: 0

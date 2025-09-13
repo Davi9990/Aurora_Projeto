@@ -9,25 +9,24 @@ public class Objeto_Identificado : MonoBehaviour
     public Dialogo dialogo;
 
     public AudioSource audioSource;
+    public AudioClip cristalColetado;
 
     void Start()
     {
         sprite_Cristal = GetComponent<SpriteRenderer>();
         sprite_Cristal.color = Color.clear;
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnMouseEnter()
     {
         sprite_Cristal.color = Color.white;
-        audioSource.Play();
+        if(audioSource != null) audioSource.Play();
     }
 
     private void OnMouseExit()
     {
         sprite_Cristal.color = Color.clear;
-        audioSource.Stop();
+        if(audioSource != null) audioSource.Stop();
     }
 
     public void OnMouseDown()
@@ -43,8 +42,14 @@ public class Objeto_Identificado : MonoBehaviour
             else
                 Debug.LogWarning("Dialogo não está atribuído no Inspector!");
 
+            if(cristalColetado != null)
+            {
+                AudioSource.PlayClipAtPoint(cristalColetado, transform.position);
+            }
+
             Destroy(gameObject);
             Debug.Log("Cristal destruído!");
         }
     }
+
 }
